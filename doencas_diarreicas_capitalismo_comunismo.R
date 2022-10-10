@@ -10,5 +10,12 @@
 ### estão entre as principais causas de morte global. Nesse registro nós observamos o peso dessa doença
 ### e o que podemos fazer para reduzir ela.
 
+### A taxa de doenças diarréicas expressa o número de mortes por ano a cada 100 mil indivíduos.
+### Essas taxas tem sido padronizadas por idade da população entre países e ao longo do tempo. 
+### Isso nos permite fazer comparações entre países e ao longo do tempo de forma a não ser afetado
+### por mudanças na estrutura de idade.
+
+### Na década de 1990 as taxas de doenças diarréicas eram muito mais elevadas comparado a atualmente.
+
 
 
