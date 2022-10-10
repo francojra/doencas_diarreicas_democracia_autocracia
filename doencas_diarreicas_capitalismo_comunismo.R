@@ -17,5 +17,35 @@
 
 ### Na década de 1990 as taxas de doenças diarréicas eram muito mais elevadas comparado a atualmente.
 
+# Carregar pacotes -------------------------------------------------------------------------------------------------------------------------
 
+library(tidyverse)
+library(cols4all)
+library(hrbrthemes)
 
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
+
+diarr <- read.csv("diarrheal-disease-death-rates.csv")
+view(diarr)
+names(diarr)
+
+# Manipular dados --------------------------------------------------------------------------------------------------------------------------
+
+diarr <- diarr %>%
+  select(-Code) %>%
+  rename(taxa_mort_diar = Deaths...Diarrheal.diseases...Sex..Both...Age..Age.standardized..Rate.) %>%
+  view()
+
+diarr1 <- diarr %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  group_by(Entity) %>%
+  summarise(media = mean(taxa_mort_diar),
+            sd = sd(taxa_mort_diar), n = n(),
+            se = sd/sqrt(n)) %>%
+  view()
+
+diarr2 <- diarr %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  view()
