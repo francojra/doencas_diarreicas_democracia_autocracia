@@ -1,0 +1,1 @@
+# doencas_diarreicas_paises_capitalistas-_comunistas
