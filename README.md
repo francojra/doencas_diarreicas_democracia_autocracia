@@ -1,4 +1,4 @@
-# Doenças diarréicas em países capitalistas e comunistas
+# Doenças diarréicas em países democratas e autocratas
 
 ### Autoria do script: Jeanne Franco
 ### Data: 09/10/22
