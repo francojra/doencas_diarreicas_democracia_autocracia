@@ -89,8 +89,6 @@ ggplot(diarr2, aes(x = Year, y = taxa_mort_diar,
   theme_ipsum(axis_title_size = 16, axis_text_size = 14) +
   theme(axis.text = element_text(color = "black"))
 
-c4a("dark2", 2)
-
 ggplot(diarr3, aes(x = Year, y = taxa_mort_diar, 
                   group = Entity, col = Entity)) +
   geom_line(size = 2) +
